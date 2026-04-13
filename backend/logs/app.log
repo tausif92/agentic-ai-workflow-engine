@@ -1,0 +1,62 @@
+2026-04-10 01:13:52.120 | INFO     | app.main:health:28 - Health check endpoint called
+2026-04-10 01:15:12.878 | INFO     | app.main:health:26 - Health check endpoint called
+2026-04-13 01:43:14.151 | INFO     | app.main:startup_event:66 - 🚀 Application startup complete
+2026-04-13 01:43:14.151 | INFO     | app.main:startup_event:67 - Environment: dev
+2026-04-13 01:44:45.074 | INFO     | app.agents.base_agent:__call__:35 - Agent 'planner_agent' started execution
+2026-04-13 01:44:45.076 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:44:48.520 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=3.44s
+2026-04-13 01:44:48.524 | INFO     | app.agents.planner_agent:_run:74 - Raw LLM response: [
+    {"step": 1, "agent": "research_agent", "task": "gather relevant data for the summary report"},
+    {"step": 2, "agent": "analysis_agent", "task": "analyze the gathered data to identify key insights"},
+    {"step": 3, "agent": "writer_agent", "task": "generate the summary report based on the analyzed data"}
+]
+2026-04-13 01:44:48.530 | INFO     | app.agents.base_agent:__call__:45 - Agent 'planner_agent' completed execution
+2026-04-13 01:44:48.536 | INFO     | app.agents.base_agent:__call__:35 - Agent 'research_agent' started execution
+2026-04-13 01:44:48.536 | INFO     | app.agents.research_agent:_run:33 - Fetched raw data for research
+2026-04-13 01:44:48.538 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:44:55.290 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=6.75s
+2026-04-13 01:44:55.293 | INFO     | app.agents.research_agent:_run:67 - Research insights generated
+2026-04-13 01:44:55.293 | INFO     | app.agents.base_agent:__call__:45 - Agent 'research_agent' completed execution
+2026-04-13 01:44:55.297 | INFO     | app.agents.base_agent:__call__:35 - Agent 'analysis_agent' started execution
+2026-04-13 01:44:55.297 | INFO     | app.agents.analysis_agent:_run:36 - Starting analysis on research data
+2026-04-13 01:44:55.297 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:45:03.660 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=8.36s
+2026-04-13 01:45:03.662 | INFO     | app.agents.analysis_agent:_run:71 - Analysis completed
+2026-04-13 01:45:03.662 | INFO     | app.agents.base_agent:__call__:45 - Agent 'analysis_agent' completed execution
+2026-04-13 01:45:03.664 | INFO     | app.agents.base_agent:__call__:35 - Agent 'writer_agent' started execution
+2026-04-13 01:45:03.664 | INFO     | app.agents.writer_agent:_run:37 - Generating final report
+2026-04-13 01:45:03.664 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:45:15.200 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=11.54s
+2026-04-13 01:45:15.200 | INFO     | app.agents.writer_agent:_run:73 - Report generation completed
+2026-04-13 01:45:15.200 | INFO     | app.agents.base_agent:__call__:45 - Agent 'writer_agent' completed execution
+2026-04-13 01:49:39.146 | INFO     | app.main:shutdown_event:76 - 🛑 Application shutdown initiated
+2026-04-13 01:49:49.821 | INFO     | app.main:startup_event:66 - 🚀 Application startup complete
+2026-04-13 01:49:49.823 | INFO     | app.main:startup_event:67 - Environment: dev
+2026-04-13 01:50:18.939 | INFO     | app.agents.base_agent:__call__:35 - Agent 'planner_agent' started execution
+2026-04-13 01:50:18.939 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:50:22.248 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=3.31s
+2026-04-13 01:50:22.248 | INFO     | app.agents.planner_agent:_run:74 - Raw LLM response: [
+    {"step": 1, "agent": "research_agent", "task": "gather relevant data and information for the summary report"},
+    {"step": 2, "agent": "analysis_agent", "task": "analyze the gathered data to identify key points and insights"},
+    {"step": 3, "agent": "writer_agent", "task": "generate a comprehensive summary report based on the analysis"}
+]
+2026-04-13 01:50:22.254 | INFO     | app.agents.base_agent:__call__:45 - Agent 'planner_agent' completed execution
+2026-04-13 01:50:22.258 | INFO     | app.agents.base_agent:__call__:35 - Agent 'research_agent' started execution
+2026-04-13 01:50:22.258 | INFO     | app.agents.research_agent:_run:33 - Fetched raw data for research
+2026-04-13 01:50:22.258 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:50:28.178 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=5.92s
+2026-04-13 01:50:28.178 | INFO     | app.agents.research_agent:_run:67 - Research insights generated
+2026-04-13 01:50:28.178 | INFO     | app.agents.base_agent:__call__:45 - Agent 'research_agent' completed execution
+2026-04-13 01:50:28.186 | INFO     | app.agents.base_agent:__call__:35 - Agent 'analysis_agent' started execution
+2026-04-13 01:50:28.186 | INFO     | app.agents.analysis_agent:_run:36 - Starting analysis on research data
+2026-04-13 01:50:28.188 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:50:34.552 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=6.36s
+2026-04-13 01:50:34.552 | INFO     | app.agents.analysis_agent:_run:71 - Analysis completed
+2026-04-13 01:50:34.552 | INFO     | app.agents.base_agent:__call__:45 - Agent 'analysis_agent' completed execution
+2026-04-13 01:50:34.557 | INFO     | app.agents.base_agent:__call__:35 - Agent 'writer_agent' started execution
+2026-04-13 01:50:34.557 | INFO     | app.agents.writer_agent:_run:37 - Generating final report
+2026-04-13 01:50:34.557 | INFO     | app.services.llm_service:_call_llm:88 - Calling LLM...
+2026-04-13 01:50:43.134 | INFO     | app.services.llm_service:generate:120 - LLM success | duration=8.58s
+2026-04-13 01:50:43.134 | INFO     | app.agents.writer_agent:_run:73 - Report generation completed
+2026-04-13 01:50:43.134 | INFO     | app.agents.base_agent:__call__:45 - Agent 'writer_agent' completed execution
+2026-04-13 15:37:18.072 | INFO     | app.main:shutdown_event:76 - 🛑 Application shutdown initiated
